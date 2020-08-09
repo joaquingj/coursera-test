@@ -1,7 +1,83 @@
-.row {
-	margin-bottom: 15px;
+body {
+  font-size: 16px;
+  /*Scroll away together with the page: add padding-top*/  
+  padding-top: 100px;
 }
-.row > div {
-	border: 2px solid red;
-	background-color: gray;
+/** HEADER **/
+#header-nav {
+  background-color: #A7A49E;
+}
+.navbar-brand h1 { 
+  color: #403E3D;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #064A9F;
+  text-align: center;  
+}
+#nav-list hr {
+  margin: 5px auto;
+  width: 85%;
+}
+#nav-list a:hover {
+  background: #E7EBF1;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #403E3D;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+section{
+  margin left: 50px; 
+}
+#cuerpo-chicken {
+  background: #ECF3CB;
+}
+#cuerpo-beef {
+  background: #E8F4B2;
+  margin-top: 10px;
+}
+#cuerpo-sushi {
+  background: #E7F79D;
+  margin-top: 10px;
+}
+/* END HOME PAGE*/
+
+/********** Medium and large devices only (Destok) **********/
+@media (min-width: 992px) {
+  
+}
+/********** Small devices only (Tablet) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+/********** Extra small devices only (Mobile) **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Title */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  } 
+  #collapsable-nav {
+    background: #BED9FA;    
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  /* End Header */  
 }
